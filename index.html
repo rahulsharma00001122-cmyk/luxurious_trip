@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MakeMyTrip Clone</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">MyTrip</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="flights.html">Flights</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="#">Login</a>
+      <a href="#">Sign Up</a>
+    </nav>
+  </header>
+
+  <!-- Search Section -->
+  <section class="search-section">
+    <div class="search-card">
+      <h2>Search Flights</h2>
+      <form action="flights.html">
+        <input type="text" placeholder="From" required>
+        <input type="text" placeholder="To" required>
+        <input type="date" required>
+        <input type="date" required>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <div class="search-card">
+      <h2>Search Hotels</h2>
+      <form action="hotels.html">
+        <input type="text" placeholder="City" required>
+        <input type="date" required>
+        <input type="date" required>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Popular Destinations -->
+  <section class="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="cards">
+      <div class="card"><img src="images/destinations/destination1.jpg" alt=""><p>Paris</p></div>
+      <div class="card"><img src="images/destinations/destination2.jpg" alt=""><p>Dubai</p></div>
+      <div class="card"><img src="images/destinations/destination3.jpg" alt=""><p>New York</p></div>
+    </div>
+  </section>
+
+  <!-- Top Deals -->
+  <section class="deals">
+    <h2>Top Deals</h2>
+    <div class="cards">
+      <div class="card"><img src="images/hotels/hotel1.jpg" alt=""><p>Hotel A</p></div>
+      <div class="card"><img src="images/hotels/hotel2.jpg" alt=""><p>Hotel B</p></div>
+      <div class="card"><img src="images/hotels/hotel3.jpg" alt=""><p>Hotel C</p></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MyTrip Clone. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
