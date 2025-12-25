@@ -1,54 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/Voyawander.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Voyawander - Your Luxurious Trip Booking Companion</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>luxurious_trip</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+    }
+    header {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #f5d58e;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: rgba(0,0,0,0.3);
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>luxurious_trip</h1>
+    <p>Experience travel in true luxury and comfort</p>
+  </header>
 
-    <!-- Meta Description -->
-    <meta
-      name="description"
-      content="Voyawander is your ultimate travel booking companion. Explore and book flights, hotels, and holiday packages with ease. Start your next adventure today!"
-    />
+  <div class="container">
+    <div class="cards">
+      <div class="card">
+        <h3>Premium Destinations</h3>
+        <p>Discover hand‑picked destinations designed for elegance, comfort, and unforgettable memories.</p>
+      </div>
+      <div class="card">
+        <h3>Luxury Stays</h3>
+        <p>Stay in world‑class hotels, resorts, and private villas tailored to your lifestyle.</p>
+      </div>
+      <div class="card">
+        <h3>Personalized Journeys</h3>
+        <p>Every trip is curated to match your taste, from private tours to exclusive experiences.</p>
+      </div>
+    </div>
+  </div>
 
-    <!-- Keywords -->
-    <meta
-      name="keywords"
-      content="Luxurious Trip booking website, Voyawander, book flights, book hotels, holiday packages, travel booking platform, travel planning"
-    />
-
-    <!-- Author -->
-    <meta name="author" content="Voyawander Team" />
-
-    <!-- Open Graph Metadata (for social media sharing) -->
-    <meta
-      property="og:title"
-      content="Voyawander - Your Luxurious Trip Booking Companion"
-    />
-    <meta
-      property="og:description"
-      content="Discover the best travel deals and book your dream trip with Voyawander. Flights, hotels, and holiday packages at your fingertips."
-    />
-    <meta property="og:image" content="/Voyawander.png" />
-    <meta property="og:url" content="https://www.voyawander.com" />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter Card Metadata -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Voyawander - Your Luxurious Trip Booking Companion"
-    />
-    <meta
-      name="twitter:description"
-      content="Plan your next adventure with Voyawander! Flights, hotels, and vacation packages made easy."
-    />
-    <meta name="twitter:image" content="/Voyawander.png" />
-    <meta name="twitter:site" content="@Voyawander" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  <footer>
+    © 2025 luxurious_trip. All rights reserved.
+  </footer>
+</body>
 </html>
